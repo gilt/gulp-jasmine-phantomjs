@@ -1,0 +1,57 @@
+{
+  "name": "gulp-jasmine-phantomjs",
+  "version": "0.1.0",
+  "description": "Gulp plugin to run client-side Jasmine 1.x tests with PhantomJS",
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "jasmine",
+    "phantomjs",
+    "test",
+    "testing",
+    "framework",
+    "runner",
+    "unit",
+    "spec",
+    "tdd",
+    "bdd"
+  ],
+  "author": "Gilt Tech <gilt-tech@gilt.com>",
+  "maintainers": [
+    {
+      "name": "Andrew Powell",
+      "email": "andrew@shellscape.org"
+    }
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "bugs": {
+    "url": "https://github.com/gilt/gulp-jasmine-phantomjs/issues"
+  },
+  "homepage": "https://github.com/gilt/gulp-jasmine-phantomjs",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/gilt/gulp-jasmine-phantomjs/blob/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gilt/gulp-jasmine-phantomjs.git"
+  },
+  "dependencies": {
+    "gulp-util": "^2.2.14",
+    "node-jasmine-phantomjs": "git://github.com/gilt/node-jasmine-phantomjs.git",
+    "phantomjs": "^1.9.0",
+    "through2": "^0.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-jshint": "^1.5.0",
+    "gulp-mocha": "^0.4.1",
+    "mocha": "^1.18.2",
+    "should": "^3.2.0"
+  }
+}
