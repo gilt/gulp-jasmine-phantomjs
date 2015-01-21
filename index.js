@@ -11,9 +11,9 @@ var fs = require('fs'),
 function jasminePhantomJS (options) {
   options = options || {};
 
-  var scriptPath = require.resolve('jasmine-phantomjs.js');
+  var scriptPath = require.resolve('node-jasmine-phantomjs');
 
-  if (!scriptPath) {
+  if (!fs.existsSync(scriptPath)) {
     throw new gutil.PluginError(pluginName, 'jasmine-phantomjs.js not found');
   }
 
@@ -56,6 +56,7 @@ function spawnPhantomJS(args, options, cb) {
 
   phantomjs.on('error', function (err) {
     cb(new gutil.PluginError(pluginName, err.message));
+    phantomjs.kill(1);
   });
 
   phantomjs.on('exit', function (code) {
