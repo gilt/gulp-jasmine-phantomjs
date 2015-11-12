@@ -1,6 +1,6 @@
 {
   "name": "gulp-jasmine-phantomjs",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Gulp plugin to run client-side Jasmine 1.x tests with PhantomJS",
   "keywords": [
     "gulp",

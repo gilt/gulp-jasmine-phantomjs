@@ -60,7 +60,7 @@ function spawnPhantomJS(args, options, cb) {
   });
 
   phantomjs.on('exit', function (code) {
-    if (errors.length && options.verbose) {
+    if (errors.length && options.verbose === true) {
       for(var i = 0; i < errors.length; i++){
         console.log('[phantom] ' + errors[i]);
       }
